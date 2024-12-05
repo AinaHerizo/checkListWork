@@ -15,11 +15,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
     let checking = (theCheckElement) => {
         theCheckElement.nextElementSibling.classList.remove("notChecked")
         theCheckElement.nextElementSibling.classList.add("checked")
+        theCheckElement.parentElement.nextElementSibling.style.textDecoration = "line-through"
+        theCheckElement.parentElement.nextElementSibling.style.color = "#8e8e8e"
     }
     let unCheck = (theCheckElement) => {
         theCheckElement.nextElementSibling.classList.remove("checked")
         theCheckElement.nextElementSibling.classList.add("notChecked")
+        theCheckElement.parentElement.nextElementSibling.style.textDecoration = "none"
+        theCheckElement.parentElement.nextElementSibling.style.color = "#000"
     }
+
         // end function
     indication.forEach(i => {
         i.addEventListener("click", () => {

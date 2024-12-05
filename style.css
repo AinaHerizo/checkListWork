@@ -72,6 +72,7 @@
     display: inline-block;
     text-align: center;
     color: #fff;
+    border-radius: 5px;
 }
 .check-container i.notChecked{
     background: #ffffff;
