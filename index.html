@@ -8,84 +8,98 @@
 </head>
 <body>
     <!-- Chargement -->
-    <div id="loading">
+    <!-- <div id="loading">
         <p>Chargement</p>
         <svg viewBox="0 0 490 100">
             <circle cx="50" cy="50" r="40" stroke="none" />
             <circle cx="250" cy="50" r="40" stroke="none" />
             <circle cx="450" cy="50" r="40" stroke="none" />
         </svg>
-    </div>
+    </div> -->
 
-    <!-- Checking list -->
-    <div class="check-container">
-        <h1>Checking list for QA</h1>
-        <h2>Usual check</h2>
-        <div>
-            <span>
-                <input type="checkbox" name="document-properties" id="document-properties">
-                <i class="notChecked">V</i>
-            </span>
-            <label for="document-properties">Document Properties: Custom Properties/ Language/ Title/ Filename/ Initial View</label>
+    <h1>Checking list for QA</h1>
+    <div class="container">
+        <!-- Checking list -->
+        <div class="check-container">
+        
+            <button id="uncheckAll" class="boutton">Uncheck All</button>
+            
+            <h2>Usual check</h2>
+            <div>
+                <span>
+                    <input type="checkbox" name="document-properties" id="document-properties">
+                    <i class="notChecked">V</i>
+                </span>
+                <label for="document-properties">Document Properties: Custom Properties/ Language/ Title/ Filename/ Initial View</label>
+            </div>
+            <div>
+                <span>
+                    <input type="checkbox" name="pac" id="pac">
+                    <i class="notChecked">V</i>
+                </span>
+                <label for="pac">Conformity Checks: Accessibility Check + PAC</label>
+            </div>
+            <div>
+                <span>
+                    <input type="checkbox" name="bookmarks" id="bookmarks">
+                    <i class="notChecked">V</i>
+                </span>
+                <label for="bookmarks">Bookmarks</label>
+            </div>
+            <div>
+                <span>
+                    <input type="checkbox" name="visual" id="visual">
+                    <i class="notChecked">V</i>
+                </span>
+                <label for="visual">Visual Check</label>
+            </div>
+            <div>
+                <span>
+                    <input type="checkbox" name="tagging" id="tagging">
+                    <i class="notChecked">V</i>
+                </span>
+                <label for="tagging">Tagging structure</label>
+            </div>
+            <div>
+                <span>
+                    <input type="checkbox" name="nvda" id="nvda">
+                    <i class="notChecked">V</i>
+                </span>
+                <label for="nvda">NVDA - Check for stuck words/ alternate descriptions and overall screen reading structure</label>
+            </div>
+            <div>
+                <span>
+                    <input type="checkbox" name="callas" id="callas">
+                    <i class="notChecked">V</i>
+                </span>
+                <label for="callas">Callas</label>
+            </div>
+            <h2>+ Merging doc check</h2>
+            <div>
+                <span>
+                    <input type="checkbox" name="link" id="link">
+                    <i class="notChecked">V</i>
+                </span>
+                <label for="link">Main TOC & Link</label>
+            </div>
+            <div>
+                <span>
+                    <input type="checkbox" name="custom" id="custom">
+                    <i class="notChecked">V</i>
+                </span>
+                <label for="custom">Using callas, add "language" on every "custom"</label>
+            </div>
         </div>
-        <div>
-            <span>
-                <input type="checkbox" name="pac" id="pac">
-                <i class="notChecked">V</i>
-            </span>
-            <label for="pac">Conformity Checks: Accessibility Check + PAC</label>
-        </div>
-        <div>
-            <span>
-                <input type="checkbox" name="bookmarks" id="bookmarks">
-                <i class="notChecked">V</i>
-            </span>
-            <label for="bookmarks">Bookmarks</label>
-        </div>
-        <div>
-            <span>
-                <input type="checkbox" name="visual" id="visual">
-                <i class="notChecked">V</i>
-            </span>
-            <label for="visual">Visual Check</label>
-        </div>
-        <div>
-            <span>
-                <input type="checkbox" name="tagging" id="tagging">
-                <i class="notChecked">V</i>
-            </span>
-            <label for="tagging">Tagging structure</label>
-        </div>
-        <div>
-            <span>
-                <input type="checkbox" name="nvda" id="nvda">
-                <i class="notChecked">V</i>
-            </span>
-            <label for="nvda">NVDA - Check for stuck words/ alternate descriptions and overall screen reading structure</label>
-        </div>
-        <div>
-            <span>
-                <input type="checkbox" name="callas" id="callas">
-                <i class="notChecked">V</i>
-            </span>
-            <label for="callas">Callas</label>
-        </div>
-        <h2>+ Merging doc check</h2>
-        <div>
-            <span>
-                <input type="checkbox" name="link" id="link">
-                <i class="notChecked">V</i>
-            </span>
-            <label for="link">Main TOC & Link</label>
-        </div>
-        <div>
-            <span>
-                <input type="checkbox" name="custom" id="custom">
-                <i class="notChecked">V</i>
-            </span>
-            <label for="custom">Using callas, add "language" on every "custom"</label>
+        <!-- Comment section -->
+        <div class="comment-container">
+            <input type="text" name="" id="" placeholder="Document title">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Comment"></textarea>
+            <button id="addComment" class="boutton">Add comment</button>
+            <div class="comment-list">
+            </div>
         </div>
     </div>
+    
     <script src="index.js"></script>
 </body>
 </html>

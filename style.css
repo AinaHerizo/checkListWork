@@ -46,17 +46,36 @@
 }
 /* end loading */
 
+/* Container */
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 50px 0 ;
+}
+/* end Container */
+h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+}
 /* Check */
 .check-container {
     font-size: 25px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 90%;
-    height: 100vh;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 25px;
+}
+.check-container > div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#uncheckAll{
+    font-size: 45px;
 }
 .check-container input{
     opacity: 0;
@@ -84,3 +103,46 @@
     cursor: pointer;
 }
 /* Check end */
+
+/* Comment */
+.comment-container{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.comment-container input, .comment-container textarea{
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid #7a7a7a;
+    border-radius: 5px;
+    width: 80%;
+    outline: none;
+}
+#addComment{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+/* End Comment */
+
+
+
+
+/* BUTTON */
+.boutton{
+    width: fit-content;
+    padding: 10px 35px;
+    background: #299265;
+    color: #fff;
+    border: 2px solid #acacac;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: -5px 2px 5px 0px #00000054;
+    transition: box-shadow .3s ease-in-out, background .3s ease-in-out;
+}
+.boutton:hover{
+    background: #f38947;
+    box-shadow: 0 0 0 0 #00000054;
+    transition: all .3s ease-in-out;
+}
+/* END BUTTON */
