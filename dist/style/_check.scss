@@ -1,0 +1,19 @@
+.custom-check{
+    border: 1px solid #2e2e2e;
+    position: relative;
+    input{
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+    }
+    svg{
+        position: relative;
+        right: -2px;
+        top:2px;
+        stroke:blue;
+        width: 15px;
+    }
+}
+
+
