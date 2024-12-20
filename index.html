@@ -8,18 +8,42 @@
 </head>
 <body>    
     <div class="container">
-        <h1>Checking list for QA</h1>
+        <div class="titleContainer">
+            <h1>Checking list for QA</h1>
+            <button id="uncheckAll">Uncheck all</button>
+        </div>
         <div class="container-check">
             <div class="container-check_group">
                 <h2>Usual check</h2>
                 <div class="check-content">
                     <label for="document-properties">Document Properties: Custom Properties/ Language/ Title/ Filename/ Initial View</label>
                 </div>
+                <div class="check-content">
+                    <label for="pac">Conformity Checks: Accessibility Check + PAC</label>
+                </div>
+                <div class="check-content">
+                    <label for="bookmarks">Bookmarks</label>
+                </div>
+                <div class="check-content">
+                    <label for="visual">Visual Check</label>
+                </div>
+                <div class="check-content">
+                    <label for="structure">Tagging structure</label>
+                </div>
+                <div class="check-content">
+                    <label for="nvda">NVDA - Check for stuck words/ alternate descriptions and overall screen reading structure</label>
+                </div>
+                <div class="check-content">
+                    <label for="callas">Callas</label>
+                </div>
             </div>
             <div class="container-check_group">
                 <h2>+ Mergin doc check</h2>
                 <div class="check-content">
-                    <label for="pac">Conformity Checks: Accessibility Check + PAC</label>
+                    <label for="toc-link">Main TOC & Link</label>
+                </div>
+                <div class="check-content">
+                    <label for="custom-lang">Using callas => add "language" on every "custom"</label>
                 </div>
             </div>
         </div>

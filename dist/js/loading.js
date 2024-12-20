@@ -8,7 +8,7 @@ export function codeLoading() {
         })
         .then(data => {
             document.querySelector("body").prepend(document.createRange().createContextualFragment(data));
-            const loadingView = document.querySelector("#loading")
+            const loadingView = document.querySelector("#loadingPage")
             // Loading Event
             if (loadingView) {
                 setTimeout(() => {

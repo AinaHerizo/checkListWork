@@ -1,5 +1,5 @@
 /* loading */
-#loading{
+#loadingPage{
     position: fixed;
     z-index: 1;
     width: 100%;
@@ -10,25 +10,25 @@
     align-items: center;
     gap: 5px;
     justify-content: center;
-}
-#loading p{
-    font-size: 25px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-#loading svg{
-    width: 75px;
-}
-#loading svg circle{
-    fill: #8d8d8d;
-}
-#loading svg circle:first-child{
-    animation: loadingPointAnimate 1s infinite alternate-reverse ease-in-out .25s;
-}
-#loading svg circle:nth-child(2){
-    animation: loadingPointAnimate 1s infinite alternate-reverse ease-in-out .5s;
-}
-#loading svg circle:last-child{
-    animation: loadingPointAnimate 1s infinite alternate-reverse ease-in-out .75s;
+    p{
+        font-size: 25px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    svg{
+        width: 75px;
+        circle{
+            fill: #8d8d8d;
+            &:first-child{
+                animation: loadingPointAnimate 1s infinite alternate-reverse ease-in-out .25s;
+            }
+            &:nth-child(2){
+                animation: loadingPointAnimate 1s infinite alternate-reverse ease-in-out .5s;
+            }
+            &:last-child{
+                animation: loadingPointAnimate 1s infinite alternate-reverse ease-in-out .75s;
+            }
+        }
+    }
 }
 @keyframes loadingPointAnimate {
     0%{
