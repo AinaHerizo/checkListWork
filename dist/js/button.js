@@ -5,7 +5,7 @@ export function codeButton (){
     const invisibleInput = document.querySelectorAll(".check-content input")
     invisibleInput.forEach(input => {
         if (input.checked) {
-            input.checked=false
+            input.click()
         }
     });
   })
