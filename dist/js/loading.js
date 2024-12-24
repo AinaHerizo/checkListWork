@@ -1,5 +1,5 @@
 export function codeLoading() {
-    fetch("/components/loading.html")
+    fetch("./components/loading.html")
         .then(response => {
             if (!response.ok) {
                 throw new Error("loading not found : " + response.status);
