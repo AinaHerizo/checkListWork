@@ -1,6 +1,6 @@
-import { codeLoading } from "/dist/js/loading.js";
-import { codeCheck } from "/dist/js/check.js";
-import { codeButton } from "/dist/js/button.js";
+import { codeLoading } from "../../dist/js/loading.js";
+import { codeCheck } from "../..//dist/js/check.js";
+import { codeButton } from "../..//dist/js/button.js";
 
 
 
