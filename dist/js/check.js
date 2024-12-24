@@ -1,5 +1,5 @@
 export function codeCheck () {
-  fetch("/components/check.html")
+  fetch("./components/check.html")
     .then(response => {
         if (!response.ok){
             throw new Error("check not find : " + response.status)
